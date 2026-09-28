@@ -1,66 +1,255 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>MP Police Salary Software</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        .dashboard {
+            width: 95%;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .header h1 {
+            color: #1e40af;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            color: #6b7280;
+        }
+
+        .employee-box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .employee-box h2 {
+            margin-bottom: 20px;
+            color: #111827;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .field label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #374151;
+        }
+
+        .field input {
+            width: 100%;
+            padding: 11px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        .field input:focus {
+            border-color: #2563eb;
+        }
+
+        .buttons {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .buttons button {
+            border: none;
+            padding: 11px 20px;
+            margin: 5px;
+            border-radius: 8px;
+            color: white;
+            background: #2563eb;
+            cursor: pointer;
+        }
+
+        .buttons button:hover {
+            background: #1d4ed8;
+        }
+
+        @media (max-width: 700px) {
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .dashboard {
+                width: 95%;
+            }
+
+        }
+
+    </style>
+
 </head>
+
+
 <body>
 
-  <div class="container">
+<div class="dashboard">
 
-    <h1>MP Police Salary Software</h1>
 
-    <h2>Employee Entry Form</h2>
+    <div class="header">
 
-    <table>
+        <h1>MP Police Salary Software</h1>
 
-        <tr>
-            <td>BNO</td>
-            <td><input type="text" id="bno"></td>
+        <p>Employee Management Dashboard</p>
 
-            <td>Unicode</td>
-            <td><input type="text" id="unicode"></td>
-        </tr>
+    </div>
 
-        <tr>
-            <td>Name</td>
-            <td><input type="text" id="name"></td>
 
-            <td>Rank</td>
-            <td><input type="text" id="rank"></td>
-        </tr>
+    <div class="employee-box">
 
-        <tr>
-            <td>PRAN No.</td>
-            <td><input type="text" id="pran"></td>
+        <h2>Employee Entry</h2>
 
-            <td>Basic Pay</td>
-            <td><input type="number" id="basic"></td>
-        </tr>
 
-        <tr>
-            <td>Posting</td>
-            <td><input type="text" id="posting"></td>
+        <div class="form-grid">
 
-            <td>Mobile</td>
-            <td><input type="text" id="mobile"></td>
-        </tr>
 
-        <tr>
-            <td colspan="4" style="text-align:center; padding-top:15px;">
-                <button>Save</button>
-                <button>Update</button>
-                <button>Delete</button>
-                <button>Search</button>
-            </td>
-        </tr>
+            <div class="field">
 
-    </table>
+                <label>BNO</label>
+
+                <input type="text"
+                       id="bno"
+                       placeholder="Enter BNO">
+
+            </div>
+
+
+            <div class="field">
+
+                <label>Unicode</label>
+
+                <input type="text"
+                       id="unicode"
+                       placeholder="Enter Unicode">
+
+            </div>
+
+
+            <div class="field">
+
+                <label>Name</label>
+
+                <input type="text"
+                       id="name"
+                       placeholder="Enter Name">
+
+            </div>
+
+
+            <div class="field">
+
+                <label>Rank</label>
+
+                <input type="text"
+                       id="rank"
+                       placeholder="Enter Rank">
+
+            </div>
+
+
+            <div class="field">
+
+                <label>PRAN No.</label>
+
+                <input type="text"
+                       id="pran"
+                       placeholder="Enter PRAN">
+
+            </div>
+
+
+            <div class="field">
+
+                <label>Basic Pay</label>
+
+                <input type="number"
+                       id="basic"
+                       placeholder="Enter Basic Pay">
+
+            </div>
+
+
+            <div class="field">
+
+                <label>Posting</label>
+
+                <input type="text"
+                       id="posting"
+                       placeholder="Enter Posting">
+
+            </div>
+
+
+            <div class="field">
+
+                <label>Mobile</label>
+
+                <input type="text"
+                       id="mobile"
+                       placeholder="Enter Mobile">
+
+            </div>
+
+
+        </div>
+
+
+        <div class="buttons">
+
+            <button id="btnSave">
+                Save
+            </button>
+
+            <button id="btnUpdate">
+                Update
+            </button>
+
+            <button id="btnDelete">
+                Delete
+            </button>
+
+            <button id="btnSearch">
+                Search
+            </button>
+
+        </div>
+
+
+    </div>
 
 </div>
 
 </body>
+
 </html>
+```
