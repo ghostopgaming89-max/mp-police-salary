@@ -1,6 +1,6 @@
 document.getElementById("btnLogin").addEventListener("click", function () {
 
-    let user = document.getElementById("txtUser").value;
+    let user = document.getElementById("txtUser").value.trim();
     let pass = document.getElementById("txtPassword").value;
 
     if (user === "admin" && pass === "1234") {
